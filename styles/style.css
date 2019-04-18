@@ -1,0 +1,217 @@
+body {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+
+.wrapper {
+    width: 90em;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 190px) 100px;
+    grid-gap: 2px;
+    
+}
+
+
+.item1 {
+    grid-row: 1/ span 3;
+    grid-column: 1/-1;
+    background: url('../images/your_verse_hero.jpg') 0 100% no-repeat;
+    background-size: cover;
+}
+
+.item2,
+.item3,
+.item4,
+.item5 {
+    grid-row: 4;
+   height: 12.5em;
+    
+}
+
+.item6 {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+    align-content: center;
+    grid-column-gap: 5em;
+    grid-row-gap: 2em;
+    font-size: .6em;
+    color: dimgray;
+    padding-top: 1em;
+}
+
+.item6 p a {
+    text-decoration: none;
+    color: rgb(0, 133, 195);
+}
+
+.item6 p a:hover {
+    text-decoration: underline rgb(0, 133, 195);
+}
+
+.item6 p:nth-of-type(1) {
+    justify-self: right;
+}
+
+.item6 p:nth-of-type(2) {
+    justify-self: left;
+    padding-bottom: 2em;
+}
+
+.item6 p:nth-of-type(3) {
+    justify-self: center;
+    padding-left: 23.3em;
+    position: relative;
+    bottom: 1.5em;
+}
+
+[alt="flag icon"] {
+    position: relative;
+    left: 1em;
+    top: .8em;
+}
+
+.item2 {
+    background: url('../images/promo_iphone5s.jpg') no-repeat;
+
+}
+
+.item3 {
+    background: url('../images/promo_iphone5c.jpg') no-repeat;
+}
+
+.item4 {
+    background: url('../images/promo_30_years.jpg') no-repeat;
+}
+
+.item5 {
+    background: url('../images/promo_supplier_responsibility.jpg') no-repeat;
+}
+
+.item2 a,
+.item3 a,
+.item4 a,
+.item5 a {
+    height: 100%;
+    display: block;
+}
+
+nav {
+    width: 61em;
+    background: lightgray; 
+    background: linear-gradient(rgb(131, 131, 131) 50%,rgb(112, 112, 112) 50%);
+    height: 2.5em;
+    margin: 2em auto;
+    border-radius: .2em;
+    border: 1px solid rgb(116, 115, 115);
+    position: static !important;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr) minmax(8em, 1fr);
+}
+
+
+
+nav ul > * {
+    border-right: 1px solid rgb(77, 76, 76);
+    height: 2.5em;
+    
+}
+
+nav ul li:last-of-type {
+    border: none;
+    width: 8em;
+}
+
+nav ul li a {
+    display: block;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: .9em;
+}
+
+nav ul li a:hover {
+    background: rgba(51,51,51,0.6);
+}
+
+[alt="logo"] {
+    width: 1.5em;
+}
+
+[type="search"] {
+    width: 80%;
+   margin-left: 1em;
+   margin-top: .75em;
+   border-radius: 1em;
+   background: url('../images/search_icon.png') 10px 50% no-repeat, linear-gradient(rgb(131, 131, 131) 70%,rgb(112, 112, 112) 50%) no-repeat;
+   background-size: 12px 12px;
+   border-top: 1px solid rgb(80, 80, 80);
+   border-bottom: 1px solid rgb(144, 144, 144);
+   border-left: none;
+   border-right: none;
+   padding-left: 2em;
+}
+
+[type="search"]:focus {
+    background: url('../images/search_icon2.png') 10px 50% no-repeat, white;
+    background-size: 12px 12px;
+    width: 95%;
+    margin-left: .3em;
+    transition-duration: 0.3s;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header > * {
+    position: relative;
+    left: 300px;
+}
+
+[href="what"],
+[href="watch"] {
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 200%;
+    text-decoration: none;
+    width: 27em;
+}
+
+[href="what"] {
+    line-height: 1.5;
+    margin-top: 2em;
+}
+
+h1 {
+    font-size: 200%;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1;
+    margin-bottom: -.5em;
+}
+
+[href="watch"] {
+    padding-top: .5em;
+    font-size: 150%;
+    background: url('../images/play-icon.png') 96% .3em no-repeat;
+    background-size: 31px 31px;
+    padding-left: 3em;
+}
+
+[href="watch"]:hover {
+    text-decoration: underline white;
+}
